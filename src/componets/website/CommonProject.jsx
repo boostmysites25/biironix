@@ -1,5 +1,5 @@
 import React from "react";
-import { appPortfolioHomepage, webPortfolioHomepage } from "../../constant";
+import { appPortfolio, webPortfolio } from "../../constant";
 import { useKeenSlider } from "keen-slider/react";
 const animation = { duration: 60000, easing: (t) => t };
 
@@ -112,7 +112,7 @@ const CommonProject = () => {
           </div>
           <h3 className="heading-2 text-center my-16">Web Projects</h3>
           <div ref={sliderRef} className="keen-slider ">
-            {webPortfolioHomepage.map((obj) => (
+            {webPortfolio.map((obj) => (
               <div
                 key={obj.id}
                 className="keen-slider__slide border-4 border-primary/40 rounded-xl bg-custom-gradient object-cover"
@@ -134,11 +134,11 @@ const CommonProject = () => {
           <h3 className="heading-2 text-center my-16">App Projects</h3>
 
           <div ref={sliderRef2} className="keen-slider">
-            {appPortfolioHomepage.map((obj) => (
+            {appPortfolio.map((obj) => (
               <div
                 key={obj.title}
                 className="keen-slider__slide border-4 border-primary/40 rounded-xl bg-custom-gradient "
-                // data-aos="fade-up"
+              // data-aos="fade-up"
               >
                 <div
                   className={`  lg:max-h-[316px]  2xl:max-h-[467px] 2xl:min-h-[467px] flex items-end
@@ -148,12 +148,11 @@ const CommonProject = () => {
                   <img
                     src={obj.img}
                     alt={obj.title}
-                    className={` hover:scale-105 transition-all duration-300   ${
-                      obj.title === "House of Deliverance" ||
+                    className={` hover:scale-105 transition-all duration-300   ${obj.title === "House of Deliverance" ||
                       obj.title === "Artisan Express"
-                        ? `object-cover  2xl:min-h-[467px]`
-                        : `object-cover`
-                    }
+                      ? `object-cover  2xl:min-h-[467px]`
+                      : `object-cover`
+                      }
                    w-full
                   `}
                   />

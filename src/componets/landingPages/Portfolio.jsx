@@ -1,5 +1,4 @@
-import React from "react";
-import { appPortfolioHomepage, webPortfolioHomepage } from "../../constant";
+import { appPortfolio, webPortfolio } from "../../constant";
 import { useKeenSlider } from "keen-slider/react";
 
 const animation = { duration: 60000, easing: (t) => t };
@@ -7,8 +6,8 @@ const animation = { duration: 60000, easing: (t) => t };
 const Portfolio = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
   let portfolio = isWebDevelopment
-    ? webPortfolioHomepage
-    : appPortfolioHomepage;
+    ? webPortfolio
+    : appPortfolio
 
   const [sliderRef] = useKeenSlider({
     loop: true,
@@ -78,7 +77,7 @@ const Portfolio = ({ page }) => {
               <div
                 key={obj.title}
                 className="keen-slider__slide border-4 border-primary/40 rounded-xl bg-custom-gradient "
-                // data-aos="fade-up"
+              // data-aos="fade-up"
               >
                 {/* <div
                   className={`  lg:max-h-[316px]  2xl:max-h-[467px] 2xl:min-h-[467px]
