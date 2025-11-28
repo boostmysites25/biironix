@@ -89,7 +89,6 @@ const LandingHeader = () => {
                 </Link>
               )
             )}
-            <Link className={`link text-sm `}>Blogs</Link>
           </div>
         </div>
         <Drawer
@@ -135,7 +134,7 @@ const LandingHeader = () => {
           onClick={toggleDrawer}
         >
           <Hamburger
-            color="white"
+            color={isScrolled ? "black" : "white"}
             size="23"
             toggled={isOpen}
             rounded
