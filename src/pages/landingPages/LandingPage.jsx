@@ -56,12 +56,12 @@ export const LandingPage = ({ page }) => {
     // Construct the request payload
     var payload = {
       to: companyDetails.email,
-      // to: "remeesreme4u@gmail.com",
+      name:"BIIRONIX TECH",
       subject: "You have a new message from BIIRONIX TECH Landing Page",
       body: emailBody,
     };
 
-    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+    await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
