@@ -13,7 +13,6 @@ import SEO from "../componets/common/SEO";
 const ServicePageLayout = () => {
   const { pathname } = useLocation();
   const wrapperRef = useRef(null);
-  const [isFirstVisit, setIsFirstVisit] = useState(true);
   const prevPath = useRef(pathname); // To store the previous path
 
   useEffect(() => {

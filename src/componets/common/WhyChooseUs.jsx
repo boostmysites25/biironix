@@ -5,7 +5,6 @@ import {
   whyChooseUsIcon2,
   whyChooseUsIcon3,
   whyChooseUsIcon4,
-  whyChooseUsPng,
 } from "../../constant";
 import whyus1 from "../../assets/images/whyus1.jpg";
 import whyus2 from "../../assets/images/whyus2.jpg";
